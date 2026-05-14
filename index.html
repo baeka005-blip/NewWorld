@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>INVETORY SYSTEM</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="dots"></div>
+
+<div class="window">
+
+  <div class="topbar">
+    <div class="top-icons">
+      <button class="icon-button js-clickable" type="button" aria-label="Back">←</button>
+      <button class="icon-button js-clickable" type="button" aria-label="Forward">→</button>
+      <button class="icon-button js-clickable" type="button" aria-label="Refresh">↻</button>
+    </div>
+
+    <button class="searchbar js-clickable" type="button">Invetory.system/</button>
+
+    <div class="window-icons">
+      <button class="icon-button js-clickable" type="button" aria-label="Favorite">☆</button>
+      <button class="icon-button js-clickable" type="button" aria-label="Minimize">—</button>
+      <button class="icon-button js-clickable" type="button" aria-label="Maximize">□</button>
+      <button class="icon-button js-clickable" type="button" aria-label="Close">×</button>
+    </div>
+  </div>
+
+  <div class="header">
+    <button class="header-icon js-clickable" type="button" aria-label="Bag icon"></button>
+
+    <div class="title-wrap">
+      <h1>MY BAG</h1>
+      <p>your items, anytime, anywhere.</p>
+    </div>
+
+    <button class="profile js-clickable" type="button" aria-label="Player profile">
+      <span class="avatar"></span>
+
+      <span class="profile-info">
+        <span>LVL 17</span>
+
+        <span class="xp-bar">
+          <span class="xp-fill"></span>
+        </span>
+
+        <span>XP 3240 / 5000</span>
+      </span>
+    </button>
+  </div>
+
+  <div class="main-grid">
+
+    <div class="sidebar">
+
+      <div class="section">
+        <h3>MENU</h3>
+
+        <ul>
+          <li><button class="menu-button active js-clickable" type="button">INVENTORY</button></li>
+          <li><button class="menu-button js-clickable" type="button">EQUIPPED</button></li>
+          <li><button class="menu-button js-clickable" type="button">FAVORITES</button></li>
+          <li><button class="menu-button js-clickable" type="button">ARCHIVE</button></li>
+          <li><button class="menu-button js-clickable" type="button">TRADE</button></li>
+          <li><button class="menu-button js-clickable" type="button">SETTINGS</button></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>CAPACITY</h3>
+
+        <button class="capacity-box js-clickable" type="button">
+          <span>34 / 60</span>
+
+          <span class="capacity-bar">
+            <span class="capacity-fill"></span>
+          </span>
+        </button>
+      </div>
+
+      <div class="section">
+        <h3>CATEGORIES</h3>
+
+        <ul>
+          <li><button class="menu-button active js-clickable" type="button">ALL ITEMS</button></li>
+          <li><button class="menu-button js-clickable" type="button">TOOLS</button></li>
+          <li><button class="menu-button js-clickable" type="button">CONSUMABLES</button></li>
+          <li><button class="menu-button js-clickable" type="button">MATERIALS</button></li>
+          <li><button class="menu-button js-clickable" type="button">MEMENTOS</button></li>
+          <li><button class="menu-button js-clickable" type="button">KEY ITEMS</button></li>
+          <li><button class="menu-button js-clickable" type="button">MISC</button></li>
+        </ul>
+      </div>
+
+      <button class="tip-box js-clickable" type="button">
+        <span class="tip-title">TIP</span>
+        <span>drag items<br>to equip<br>or use!</span>
+      </button>
+
+    </div>
+
+    <div class="inventory-panel">
+
+      <div class="inventory-top">
+        <h2>INVENTORY</h2>
+
+        <button class="sort-box js-clickable" type="button">
+          SORT: NEWEST
+        </button>
+      </div>
+
+      <div class="inventory-grid">
+        <button class="item selected js-clickable" type="button" aria-label="Healing potion"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 2"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 3"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 4"></button>
+
+        <button class="item js-clickable" type="button" aria-label="Item slot 5"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 6"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 7"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 8"></button>
+
+        <button class="item js-clickable" type="button" aria-label="Item slot 9"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 10"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 11"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 12"></button>
+
+        <button class="item js-clickable" type="button" aria-label="Item slot 13"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 14"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 15"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 16"></button>
+
+        <button class="item js-clickable" type="button" aria-label="Item slot 17"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 18"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 19"></button>
+        <button class="item js-clickable" type="button" aria-label="Item slot 20"></button>
+      </div>
+
+      <div class="pages" aria-label="Inventory pages">
+        <button class="page-button js-clickable" type="button" aria-label="Previous page">‹</button>
+        <button class="page-button page-active js-clickable" type="button">1</button>
+        <button class="page-button js-clickable" type="button">2</button>
+        <button class="page-button js-clickable" type="button">3</button>
+        <button class="page-button js-clickable" type="button">4</button>
+        <button class="page-button js-clickable" type="button">5</button>
+        <button class="page-button js-clickable" type="button" aria-label="Next page">›</button>
+      </div>
+
+    </div>
+
+    <div class="info-panel">
+
+      <h3>ITEM INFO</h3>
+
+      <button class="large-item js-clickable" type="button" aria-label="Selected item preview"></button>
+
+      <h2>HEALING POTION</h2>
+
+      <p class="type">CONSUMABLE</p>
+
+      <p class="desc">
+        restores 50 HP.<br>
+        a sweet fizzy drink<br>
+        that makes you feel<br>
+        a little better.
+      </p>
+
+      <p class="qty">QTY: 3</p>
+
+      <button class="action-button js-clickable" type="button">USE</button>
+      <button class="action-button js-clickable" type="button">EQUIP</button>
+      <button class="action-button js-clickable" type="button">FAVORITE</button>
+      <button class="action-button js-clickable" type="button">DROP</button>
+
+    </div>
+
+  </div>
+
+  <div class="bottom-bar">
+
+    <h3>QUICK ACCESS BAR</h3>
+
+    <div class="quick-grid">
+      <button class="quick-item js-clickable" type="button" aria-label="Quick slot 1"></button>
+      <button class="quick-item js-clickable" type="button" aria-label="Quick slot 2"></button>
+      <button class="quick-item js-clickable" type="button" aria-label="Quick slot 3"></button>
+      <button class="quick-item js-clickable" type="button" aria-label="Quick slot 4"></button>
+      <button class="quick-item js-clickable" type="button" aria-label="Quick slot 5"></button>
+      <button class="quick-item js-clickable" type="button" aria-label="Quick slot 6"></button>
+      <button class="quick-item js-clickable" type="button" aria-label="Quick slot 7"></button>
+      <button class="quick-item js-clickable" type="button" aria-label="Quick slot 8"></button>
+    </div>
+
+    <p>what will you carry today?</p>
+
+  </div>
+
+</div>
+
+<script>
+const audioState = {
+  context: null
+};
+
+function getAudioContext(){
+  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+
+  if(!AudioContextClass){
+    return null;
+  }
+
+  if(!audioState.context){
+    audioState.context = new AudioContextClass();
+  }
+
+  return audioState.context;
+}
+
+function playClickSound(){
+  const context = getAudioContext();
+
+  if(!context){
+    return;
+  }
+
+  if(context.state === "suspended"){
+    context.resume();
+  }
+
+  const now = context.currentTime;
+  const oscillator = context.createOscillator();
+  const gain = context.createGain();
+
+  oscillator.type = "square";
+  oscillator.frequency.setValueAtTime(760, now);
+  oscillator.frequency.exponentialRampToValueAtTime(220, now + 0.055);
+
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(0.16, now + 0.006);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.075);
+
+  oscillator.connect(gain);
+  gain.connect(context.destination);
+
+  oscillator.start(now);
+  oscillator.stop(now + 0.085);
+}
+
+function showPress(button){
+  button.classList.add("is-pressed");
+
+  window.setTimeout(() => {
+    button.classList.remove("is-pressed");
+  }, 120);
+}
+
+document.querySelectorAll(".js-clickable").forEach((button) => {
+  button.addEventListener("click", () => {
+    playClickSound();
+    showPress(button);
+  });
+});
+
+document.querySelectorAll(".inventory-grid .item").forEach((item) => {
+  item.addEventListener("click", () => {
+    document.querySelectorAll(".inventory-grid .item").forEach((otherItem) => {
+      otherItem.classList.remove("selected");
+    });
+
+    item.classList.add("selected");
+  });
+});
+
+document.querySelectorAll(".section ul").forEach((list) => {
+  list.querySelectorAll(".menu-button").forEach((button) => {
+    button.addEventListener("click", () => {
+      list.querySelectorAll(".menu-button").forEach((otherButton) => {
+        otherButton.classList.remove("active");
+      });
+
+      button.classList.add("active");
+    });
+  });
+});
+
+document.querySelectorAll(".page-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const pageText = button.textContent.trim();
+
+    if(!/^\d+$/.test(pageText)){
+      return;
+    }
+
+    document.querySelectorAll(".page-button").forEach((otherButton) => {
+      otherButton.classList.remove("page-active");
+    });
+
+    button.classList.add("page-active");
+  });
+});
+</script>
+
+</body>
+</html>
